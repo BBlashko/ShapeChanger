@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shape Changer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="title_activity_difficulty">difficulty</string>
+    <string name="title_activity_options">Options</string>
+    <string name="title_activity_play_game">PlayGame</string>
+    <string name="title_activity_game_over_screen">GameOverScreen</string>
+    <string name="title_activity_game_over">GameOver</string>
+
+</resources>

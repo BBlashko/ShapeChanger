@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lynx.bblashko.shapechanger.Statistics"
+    android:id="@+id/relativelayout"
+    android:gravity="start"
+    android:screenOrientation="landscape"  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:id="@+id/statistics_title"
+        android:textSize="36dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/btn_main"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/main_button_enabled"
+        android:textColor="#ff0100ff"
+        android:textSize="15dp" />
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/statistics_title">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/easy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_easy"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_easy2"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/tb_easy"
+                        android:layout_toEndOf="@+id/tb_easy" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_medium"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_medium2"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tb_medium"
+                        android:layout_toEndOf="@+id/tb_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_hard"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_hard2"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tb_hard"
+                        android:layout_toEndOf="@+id/tb_hard2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shapechanger"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_shapechanger"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tb_shapechanger2"
+                        android:minWidth="140dp"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tb_shapechanger"
+                        android:layout_toEndOf="@+id/tb_shapechanger" />
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+----- Configurations -----
+currentDifficulty=0
+medium=true
+hard=true
+shapechanger=true
+square_color=#FF0000
+rectangle_color=#00FFFF
+triangle_color=#00FF00
+background=random

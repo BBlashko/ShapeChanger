@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.lynx.bblashko.shapechanger.GameOver">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over!"
+        android:id="@+id/textView4"
+        android:textSize="36dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gos_score"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gos_message"
+        android:textSize="25dp"
+        android:layout_below="@+id/tv_gos_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:id="@+id/btn_gos_statistics"
+        android:background="@drawable/main_button_enabled"
+        android:textColor="#ff0100ff"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btn_gos_restart"
+        android:layout_alignStart="@+id/btn_gos_restart" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/btn_gos_restart"
+        android:background="@drawable/main_button_enabled"
+        android:textColor="#ff0100ff"
+        android:textSize="15dp"
+        android:layout_above="@+id/btn_gos_statistics"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/btn_gos_main_menu"
+        android:background="@drawable/main_button_enabled"
+        android:textColor="#ff0100ff"
+        android:textSize="15dp"
+        android:layout_above="@+id/btn_gos_restart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
